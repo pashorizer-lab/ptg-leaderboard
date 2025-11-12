@@ -1,110 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Light-Neon Leaderboard</title>
+<title>Kingshot Leaderboard</title>
 <style>
-:root{
---bg:#f6f8fb;
---card:#ffffff;
---muted:#6b7280;
---accent1:#06b6d4; /* cyan */
---accent2:#8b5cf6; /* purple */
---glow: 0 8px 24px rgba(139,92,246,0.12), 0 4px 12px rgba(6,182,212,0.06);
---green:#10b981;
---yellow:#f59e0b;
---orange:#fb923c;
---red:#ef4444;
---topgold: linear-gradient(90deg,#ffd54a,#ffb84d);
-font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #eef2ff 100%);color:#0f172a}
-.wrap{max-width:1100px;margin:36px auto;padding:28px}
-header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-.logo{display:flex;flex-direction:column}
-h1{margin:0;font-size:20px;letter-spacing:-0.2px}
-p.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+  body {
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #111;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
 
+  h1 {
+    color: #00bcd4;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
 
-.controls{display:flex;gap:12px;align-items:center;margin-bottom:14px}
-select,input[type='search']{padding:8px 10px;border-radius:8px;border:1px solid #e6edf6;background:var(--card);font-size:13px}
+  .leaderboard {
+    width: 100%;
+    max-width: 960px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.12);
+    overflow: hidden;
+  }
 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
-.card{background:var(--card);border-radius:12px;padding:14px;box-shadow:var(--glow)}
+  thead th {
+    background: rgba(0, 255, 255, 0.08);
+    color: #055;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
 
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+    vertical-align: top;
+  }
 
-table{width:100%;border-collapse:collapse;font-size:13px}
-thead th{padding:10px 8px;text-align:left;color:var(--muted);font-weight:600;font-size:12px}
-tbody td{padding:12px 8px;border-top:1px solid #f1f5f9;vertical-align:top}
-tbody tr:hover td{background:linear-gradient(90deg,rgba(139,92,246,0.03),rgba(6,182,212,0.02))}
+  tr:hover {
+    background: rgba(0, 255, 255, 0.04);
+  }
 
+  .rank {
+    color: #00bcd4;
+    font-weight: 700;
+    white-space: nowrap;
+  }
 
-.rank{width:48px;font-weight:700}
-.player{width:260px}
-.score{width:140px;text-align:right;font-variant-numeric:tabular-nums}
-.percent{width:110px;text-align:right}
-.remarks{max-width:420px;color:#0f172a}
+  /* Player name defaults */
+  .player {
+    color: #111;
+  }
+  .player.p99 {
+    color: #00e5ff;
+    text-shadow: 0 0 6px #80deea;
+    font-weight: 700;
+  }
+  .player.p95 {
+    color: #9c27b0;
+    text-shadow: 0 0 6px #d35fe7;
+    font-weight: 700;
+  }
 
+  .score {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
 
-/* neon accents for top ranks */
-.rank-1 td{background:linear-gradient(90deg,#fff9e6,#fff2d1)}
-.rank-1 .rank-pill{background:var(--topgold);color:#1a1a1a;padding:6px 10px;border-radius:999px;font-weight:800}
-.rank-2 .rank-pill{background:linear-gradient(90deg,#d4f1ff,#bfefff);color:#002138}
-.rank-3 .rank-pill{background:linear-gradient(90deg,#f0f4ff,#e6e9ff);color:#002}
+  /* Weekly increase % colors */
+  .increase {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .increase.p99 { color: #00e5ff; text-shadow: 0 0 6px #80deea; }
+  .increase.p95 { color: #9c27b0; text-shadow: 0 0 6px #d35fe7; }
+  .increase.p75 { color: #00c853; text-shadow: 0 0 4px #69f0ae; }
+  .increase.p50 { color: #000000; text-shadow: 0 0 1px #ffffff; }
+  .increase.p25 { color: #f44336; text-shadow: 0 0 3px #ff8a80; }
 
+  .remark {
+    color: #333;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    white-space: normal;
+  }
 
-.rank-pill{display:inline-block;padding:4px 8px;border-radius:999px;font-weight:700}
+  @media (max-width: 720px) {
+    tr {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 8px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    td {
+      flex: 1 1 45%;
+      min-width: 120px;
+      padding: 6px 8px;
+    }
+    td.remark {
+      flex-basis: 100%;
+      margin-top: 6px;
+    }
+    td.remark::before {
+      content: "💬 ";
+      color: #00bcd4;
+      font-weight: 700;
+    }
+  }
 
-
-/* percent badges */
-.pct{display:inline-block;padding:6px 8px;border-radius:8px;font-weight:700;font-size:13px}
-.pct.high{background:linear-gradient(90deg,var(--green),#34d399);color:#002}
-.pct.mid{background:linear-gradient(90deg,var(--yellow),#fbbf24);color:#111}
-.pct.low{background:linear-gradient(90deg,var(--orange),#fb923c);color:#111}
-.pct.flat{background:#fee2e2;color:var(--red)}
-
-
-/* small screen tweaks */
-@media (max-width:900px){
-.player{width:180px}
-.remarks{display:block;font-size:13px}
-}
-
-
-/* remarks styling */
-.remarks .line{margin-bottom:6px}
-.muted{color:var(--muted);font-size:12px}
+  @media (max-width: 420px) {
+    td { flex-basis: 100%; }
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-<div style="width:78px;height:78px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:22px;box-shadow:var(--glow)">🏆</div>
-<div class="logo">
-<h1>Light-Neon Leaderboard</h1>
-<p class="lead">Game-style leaderboard • Sorted by <strong id="sortLabel">Rank</strong> • Light theme with neon highlights</p>
-</div>
-</header>
+  <h1>🏆 Kingshot Weekly Leaderboard</h1>
+  <div class="leaderboard">
+    <table id="board">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Score (W1)</th>
+          <th>Score (W2)</th>
+          <th>Increase %</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
+<script>
+(async function(){
+  try {
+    const resp = await fetch('leaderboard.json', { cache: 'no-store' });
+    const data = await resp.json();
 
-<div class="controls">
-<label class="muted">Sort by</label>
-<select id="sortSel" aria-label="sort">
-<option value="rank">Rank</option>
-<option value="weekly_increase">Weekly Increase %</option>
-</select>
-<input id="search" type="search" placeholder="Search name or remark..." />
-<button id="refresh" style="margin-left:auto;padding:8px 10px;border-radius:8px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;border:none;">Refresh</button>
-</div>
+    const increases = data.map(p => {
+      let raw = p["weekly_increase %"] ?? p.weekly_increase ?? "";
+      if (typeof raw === "string") raw = raw.replace(",", ".");
+      const n = parseFloat(raw);
+      return isFinite(n) ? n : NaN;
+    });
 
+    const valid = increases.filter(v => !isNaN(v)).sort((a,b)=>a-b);
 
-<div class="card">
-<table id="board">
-<thead>
-<tr>
-<th class="rank">#</th>
-<th class="player">Player</th>
-<th class="score">Score Week 1</th>
-<th class="score">Score Week 2</th>
+    function percentileOf(value) {
+      if (isNaN(value)) return 0;
+      const index = valid.findIndex(v => v >= value);
+      const rank = index === -1 ? valid.length : index + 1;
+      return (rank / valid.length) * 100;
+    }
+
+    function pctClass(value) {
+      const pct = percentileOf(value);
+      if (pct >= 99) return 'p99';
+      if (pct >= 95) return 'p95';
+      if (pct >= 75) return 'p75';
+      if (pct >= 50) return 'p50';
+      return 'p25';
+    }
+
+    function formatScore(val) {
+      if (!val) return '';
+      if (typeof val === 'number') return val.toLocaleString('de-DE');
+      const parsed = parseFloat(val.toString().replace(/\./g,'').replace(',', '.'));
+      return isNaN(parsed) ? val : parsed.toLocaleString('de-DE');
+    }
+
+    const tbody = document.querySelector('#board tbody');
+    tbody.innerHTML = '';
+
+    data.forEach((p, i) => {
+      const increase = increases[i];
+      const incDisplay = isNaN(increase) ? '-' : increase.toFixed(2).replace('.', ',') + '%';
+      const incClass = pctClass(increase);
+      const nameClass = ['p99', 'p95'].includes(incClass) ? incClass : '';
+
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="rank">#${p.rank ?? ''}</td>
+        <td class="player ${nameClass}">${escapeHtml(p.player_name ?? '')}</td>
+        <td class="score">${formatScore(p.score_week1)}</td>
+        <td class="score">${formatScore(p.score_week2)}</td>
+        <td class="increase ${incClass}">${incDisplay}</td>
+        <td class="remark">${escapeHtml(p.remarks ?? p.Remarks ?? '—')}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+
+  } catch (err) {
+    console.error('Error loading leaderboard:', err);
+    const tbody = document.querySelector('#board tbody');
+    tbody.innerHTML = `<tr><td colspan="6" style="padding:12px;color:#666;">Could not load leaderboard.json — check console.</td></tr>`;
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;');
+  }
+})();
+</script>
+</body>
 </html>
