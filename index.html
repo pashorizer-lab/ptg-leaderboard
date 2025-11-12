@@ -38,8 +38,11 @@
     border-collapse: collapse;
   }
 
-  thead th {
+  thead {
     background: rgba(0, 255, 255, 0.08);
+  }
+
+  thead th {
     color: #055;
     padding: 10px 12px;
     text-align: left;
@@ -65,35 +68,25 @@
     white-space: nowrap;
   }
 
-  /* Player name defaults */
-  .player {
-    color: #111;
-  }
-  .player.p99 {
-    color: #00e5ff;
-    text-shadow: 0 0 6px #80deea;
-    font-weight: 700;
-  }
-  .player.p95 {
-    color: #9c27b0;
-    text-shadow: 0 0 6px #d35fe7;
-    font-weight: 700;
-  }
+  /* Player names */
+  .player { color: #111; }
+  .player.p99 { color: #00e5ff; text-shadow: 0 0 6px #80deea; font-weight: 700; }
+  .player.p95 { color: #9c27b0; text-shadow: 0 0 6px #e1bee7; font-weight: 700; }
 
   .score {
     white-space: nowrap;
     font-variant-numeric: tabular-nums;
   }
 
-  /* Weekly increase % colors */
+  /* Weekly increase colors */
   .increase {
     font-weight: 700;
     white-space: nowrap;
   }
   .increase.p99 { color: #00e5ff; text-shadow: 0 0 6px #80deea; }
-  .increase.p95 { color: #9c27b0; text-shadow: 0 0 6px #d35fe7; }
+  .increase.p95 { color: #9c27b0; text-shadow: 0 0 6px #e1bee7; }
   .increase.p75 { color: #00c853; text-shadow: 0 0 4px #69f0ae; }
-  .increase.p50 { color: #000000; text-shadow: 0 0 1px #ffffff; }
+  .increase.p50 { color: #ff9800; text-shadow: 0 0 3px #ffcc80; }
   .increase.p25 { color: #f44336; text-shadow: 0 0 3px #ff8a80; }
 
   .remark {
@@ -103,31 +96,60 @@
     white-space: normal;
   }
 
+  /* --- Responsive layout --- */
   @media (max-width: 720px) {
+    thead { display: none; } /* hide header */
+
     tr {
       display: flex;
       flex-wrap: wrap;
-      padding: 8px;
       border-bottom: 1px solid rgba(0,0,0,0.06);
+      margin-bottom: 4px;
+      padding: 8px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
     }
+
     td {
       flex: 1 1 45%;
-      min-width: 120px;
+      min-width: 140px;
       padding: 6px 8px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
     }
+
+    td::before {
+      content: attr(data-label);
+      font-weight: 700;
+      color: #00bcd4;
+      margin-right: 8px;
+      flex: 1;
+      max-width: 50%;
+      text-align: left;
+    }
+
     td.remark {
       flex-basis: 100%;
+      display: block;
       margin-top: 6px;
+      padding-top: 4px;
+      border-top: 1px dashed rgba(0,0,0,0.1);
     }
     td.remark::before {
-      content: "💬 ";
-      color: #00bcd4;
+      content: "💬 Remark";
+      display: block;
       font-weight: 700;
+      color: #00bcd4;
+      margin-bottom: 4px;
     }
   }
 
   @media (max-width: 420px) {
-    td { flex-basis: 100%; }
+    td {
+      flex-basis: 100%;
+      justify-content: space-between;
+    }
   }
 </style>
 </head>
@@ -198,12 +220,12 @@
 
       const tr = document.createElement('tr');
       tr.innerHTML = `
-        <td class="rank">#${p.rank ?? ''}</td>
-        <td class="player ${nameClass}">${escapeHtml(p.player_name ?? '')}</td>
-        <td class="score">${formatScore(p.score_week1)}</td>
-        <td class="score">${formatScore(p.score_week2)}</td>
-        <td class="increase ${incClass}">${incDisplay}</td>
-        <td class="remark">${escapeHtml(p.remarks ?? p.Remarks ?? '—')}</td>
+        <td class="rank" data-label="Rank">#${p.rank ?? ''}</td>
+        <td class="player ${nameClass}" data-label="Player">${escapeHtml(p.player_name ?? '')}</td>
+        <td class="score" data-label="Score (W1)">${formatScore(p.score_week1)}</td>
+        <td class="score" data-label="Score (W2)">${formatScore(p.score_week2)}</td>
+        <td class="increase ${incClass}" data-label="Increase %">${incDisplay}</td>
+        <td class="remark" data-label="Remarks">${escapeHtml(p.remarks ?? p.Remarks ?? '—')}</td>
       `;
       tbody.appendChild(tr);
     });
