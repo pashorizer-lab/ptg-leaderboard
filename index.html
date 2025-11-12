@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Light-Neon Leaderboard</title>
+<style>
+:root{
+--bg:#f6f8fb;
+--card:#ffffff;
+--muted:#6b7280;
+--accent1:#06b6d4; /* cyan */
+--accent2:#8b5cf6; /* purple */
+--glow: 0 8px 24px rgba(139,92,246,0.12), 0 4px 12px rgba(6,182,212,0.06);
+--green:#10b981;
+--yellow:#f59e0b;
+--orange:#fb923c;
+--red:#ef4444;
+--topgold: linear-gradient(90deg,#ffd54a,#ffb84d);
+font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #eef2ff 100%);color:#0f172a}
+.wrap{max-width:1100px;margin:36px auto;padding:28px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.logo{display:flex;flex-direction:column}
+h1{margin:0;font-size:20px;letter-spacing:-0.2px}
+p.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+
+.controls{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+select,input[type='search']{padding:8px 10px;border-radius:8px;border:1px solid #e6edf6;background:var(--card);font-size:13px}
+
+
+.card{background:var(--card);border-radius:12px;padding:14px;box-shadow:var(--glow)}
+
+
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{padding:10px 8px;text-align:left;color:var(--muted);font-weight:600;font-size:12px}
+tbody td{padding:12px 8px;border-top:1px solid #f1f5f9;vertical-align:top}
+tbody tr:hover td{background:linear-gradient(90deg,rgba(139,92,246,0.03),rgba(6,182,212,0.02))}
+
+
+.rank{width:48px;font-weight:700}
+.player{width:260px}
+.score{width:140px;text-align:right;font-variant-numeric:tabular-nums}
+.percent{width:110px;text-align:right}
+.remarks{max-width:420px;color:#0f172a}
+
+
+/* neon accents for top ranks */
+.rank-1 td{background:linear-gradient(90deg,#fff9e6,#fff2d1)}
+.rank-1 .rank-pill{background:var(--topgold);color:#1a1a1a;padding:6px 10px;border-radius:999px;font-weight:800}
+.rank-2 .rank-pill{background:linear-gradient(90deg,#d4f1ff,#bfefff);color:#002138}
+.rank-3 .rank-pill{background:linear-gradient(90deg,#f0f4ff,#e6e9ff);color:#002}
+
+
+.rank-pill{display:inline-block;padding:4px 8px;border-radius:999px;font-weight:700}
+
+
+/* percent badges */
+.pct{display:inline-block;padding:6px 8px;border-radius:8px;font-weight:700;font-size:13px}
+.pct.high{background:linear-gradient(90deg,var(--green),#34d399);color:#002}
+.pct.mid{background:linear-gradient(90deg,var(--yellow),#fbbf24);color:#111}
+.pct.low{background:linear-gradient(90deg,var(--orange),#fb923c);color:#111}
+.pct.flat{background:#fee2e2;color:var(--red)}
+
+
+/* small screen tweaks */
+@media (max-width:900px){
+.player{width:180px}
+.remarks{display:block;font-size:13px}
+}
+
+
+/* remarks styling */
+.remarks .line{margin-bottom:6px}
+.muted{color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div style="width:78px;height:78px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:22px;box-shadow:var(--glow)">🏆</div>
+<div class="logo">
+<h1>Light-Neon Leaderboard</h1>
+<p class="lead">Game-style leaderboard • Sorted by <strong id="sortLabel">Rank</strong> • Light theme with neon highlights</p>
+</div>
+</header>
+
+
+<div class="controls">
+<label class="muted">Sort by</label>
+<select id="sortSel" aria-label="sort">
+<option value="rank">Rank</option>
+<option value="weekly_increase">Weekly Increase %</option>
+</select>
+<input id="search" type="search" placeholder="Search name or remark..." />
+<button id="refresh" style="margin-left:auto;padding:8px 10px;border-radius:8px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;border:none;">Refresh</button>
+</div>
+
+
+<div class="card">
+<table id="board">
+<thead>
+<tr>
+<th class="rank">#</th>
+<th class="player">Player</th>
+<th class="score">Score Week 1</th>
+<th class="score">Score Week 2</th>
+</html>
