@@ -1,158 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>PTG Leaderboard</title>
-<style>
-  body {
-    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: #111;
-    margin: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  h1 {
-    color: #00bcd4;
-    text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-  }
-
-  .leaderboard {
-    width: 100%;
-    max-width: 960px;
-    background: rgba(255, 255, 255, 0.97);
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.12);
-    overflow: hidden;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  thead {
-    background: rgba(0, 255, 255, 0.08);
-  }
-
-  thead th {
-    color: #055;
-    padding: 10px 12px;
-    text-align: left;
-    font-weight: 700;
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-
-  td {
-    padding: 10px 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    font-size: 0.9rem;
-    vertical-align: top;
-  }
-
-  tr:hover {
-    background: rgba(0, 255, 255, 0.04);
-  }
-
-  .rank {
-    color: #00bcd4;
-    font-weight: 700;
-    white-space: nowrap;
-  }
-
-  /* Player names */
-  .player { color: #111; }
-  .player.p99 { color: #00e5ff; text-shadow: 0 0 6px #80deea; font-weight: 700; }
-  .player.p95 { color: #9c27b0; text-shadow: 0 0 6px #e1bee7; font-weight: 700; }
-
-  .score {
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
-  }
-
-  /* Weekly increase colors */
-  .increase {
-    font-weight: 700;
-    white-space: nowrap;
-  }
-  .increase.p99 { color: #00e5ff; text-shadow: 0 0 6px #80deea; }
-  .increase.p95 { color: #9c27b0; text-shadow: 0 0 6px #e1bee7; }
-  .increase.p75 { color: #00c853; text-shadow: 0 0 4px #69f0ae; }
-  .increase.p50 { color: #ff9800; text-shadow: 0 0 3px #ffcc80; }
-  .increase.p25 { color: #f44336; text-shadow: 0 0 3px #ff8a80; }
-
-  .remark {
-    color: #333;
-    font-size: 0.88rem;
-    line-height: 1.35;
-    white-space: normal;
-  }
-
-  /* --- Responsive layout --- */
-  @media (max-width: 720px) {
-    thead { display: none; } /* hide header */
-
-    tr {
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PTG Leaderboard</title>
+  <style>
+    body {
+      background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: #111;
+      margin: 0;
+      padding: 1rem;
       display: flex;
-      flex-wrap: wrap;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-      margin-bottom: 4px;
-      padding: 8px;
-      background: rgba(255,255,255,0.8);
-      border-radius: 8px;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    td {
-      flex: 1 1 45%;
-      min-width: 140px;
-      padding: 6px 8px;
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-    }
-
-    td::before {
-      content: attr(data-label);
-      font-weight: 700;
+    h1 {
       color: #00bcd4;
-      margin-right: 8px;
-      flex: 1;
-      max-width: 50%;
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    .leaderboard {
+      width: 100%;
+      max-width: 960px;
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.12);
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background: rgba(0, 255, 255, 0.08);
+    }
+
+    thead th {
+      color: #055;
+      padding: 10px 12px;
       text-align: left;
-    }
-
-    td.remark {
-      flex-basis: 100%;
-      display: block;
-      margin-top: 6px;
-      padding-top: 4px;
-      border-top: 1px dashed rgba(0,0,0,0.1);
-    }
-    td.remark::before {
-      content: "💬 Remark";
-      display: block;
       font-weight: 700;
-      color: #00bcd4;
-      margin-bottom: 4px;
+      font-size: 0.9rem;
+      white-space: nowrap;
     }
-  }
 
-  @media (max-width: 420px) {
     td {
-      flex-basis: 100%;
-      justify-content: space-between;
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      font-size: 0.9rem;
+      vertical-align: top;
     }
-  }
-</style>
+
+    tr:hover {
+      background: rgba(0, 255, 255, 0.04);
+    }
+
+    .rank {
+      color: #00bcd4;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Player names */
+    .player {
+      color: #111;
+    }
+
+    .player.p99 {
+      color: #00e5ff;
+      text-shadow: 0 0 6px #80deea;
+      font-weight: 700;
+    }
+
+    .player.p95 {
+      color: #9c27b0;
+      text-shadow: 0 0 6px #e1bee7;
+      font-weight: 700;
+    }
+
+    .score {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Weekly increase colors */
+    .increase {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .increase.p99 {
+      color: #00e5ff;
+      text-shadow: 0 0 6px #80deea;
+    }
+
+    .increase.p95 {
+      color: #9c27b0;
+      text-shadow: 0 0 6px #e1bee7;
+    }
+
+    .increase.p75 {
+      color: #00c853;
+      text-shadow: 0 0 4px #69f0ae;
+    }
+
+    .increase.p50 {
+      color: #ff9800;
+      text-shadow: 0 0 3px #ffcc80;
+    }
+
+    .increase.p25 {
+      color: #f44336;
+      text-shadow: 0 0 3px #ff8a80;
+    }
+
+    .remark {
+      color: #333;
+      font-size: 0.88rem;
+      line-height: 1.35;
+      white-space: normal;
+    }
+
+    /* Jitter animation for numbers */
+    @keyframes jitter {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      25% {
+        transform: translate(1px, 1px);
+      }
+
+      50% {
+        transform: translate(-1px, -1px);
+      }
+
+      75% {
+        transform: translate(-1px, 1px);
+      }
+
+      100% {
+        transform: translate(1px, -1px);
+      }
+    }
+
+    .jitter {
+      display: inline-block;
+      animation: jitter 0.1s infinite;
+    }
+
+    .rank-change {
+      font-size: 0.85em;
+      margin-left: 6px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .rank-change.up {
+      color: #00c853;
+    }
+
+    .rank-change.down {
+      color: #f44336;
+    }
+
+    .rank-change.same {
+      color: #999;
+      opacity: 0.5;
+      font-weight: 400;
+    }
+
+    .rank-change.new {
+      color: #ff9800;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: rgba(255, 152, 0, 0.1);
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    /* --- Responsive layout --- */
+    @media (max-width: 720px) {
+      thead {
+        display: none;
+      }
+
+      /* hide header */
+
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        margin-bottom: 4px;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+      }
+
+      td {
+        flex: 1 1 45%;
+        min-width: 140px;
+        padding: 6px 8px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: #00bcd4;
+        margin-right: 8px;
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+      }
+
+      td.remark {
+        flex-basis: 100%;
+        display: block;
+        margin-top: 6px;
+        padding-top: 4px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.1);
+      }
+
+      td.remark::before {
+        content: "💬 Remark";
+        display: block;
+        font-weight: 700;
+        color: #00bcd4;
+        margin-bottom: 4px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      td {
+        flex-basis: 100%;
+        justify-content: space-between;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <h1>🏆 PTG Weekly(ish) Leaderboard</h1>
   <div class="leaderboard">
@@ -163,6 +261,7 @@
           <th>Player</th>
           <th>Score (W1)</th>
           <th>Score (W2)</th>
+          <th>Score (W3)</th>
           <th>Increase %</th>
           <th>Remarks</th>
         </tr>
@@ -171,78 +270,233 @@
     </table>
   </div>
 
-<script>
-(async function(){
-  try {
-    const resp = await fetch('leaderboard.json', { cache: 'no-store' });
-    const data = await resp.json();
+  <script>
+    (async function () {
+      try {
+        const resp = await fetch('leaderboard.json', { cache: 'no-store' });
+        const data = await resp.json();
 
-    const increases = data.map(p => {
-      let raw = p["weekly_increase %"] ?? p.weekly_increase ?? "";
-      if (typeof raw === "string") raw = raw.replace(",", ".");
-      const n = parseFloat(raw);
-      return isFinite(n) ? n : NaN;
-    });
+        // Calculate increases first (needed for display, but we sort by rank now)
+        const increases = data.map(p => {
+          let raw = p["weekly_increase %"] ?? p.weekly_increase ?? "";
+          if (typeof raw === "string") raw = raw.replace(",", ".");
+          const n = parseFloat(raw);
+          return isFinite(n) ? n : NaN;
+        });
 
-    const valid = increases.filter(v => !isNaN(v)).sort((a,b)=>a-b);
+        function parseScore(val) {
+          if (typeof val === 'number') return val;
+          if (!val) return 0;
+          const parsed = parseFloat(val.toString().replace(/\./g, '').replace(',', '.'));
+          return isNaN(parsed) ? 0 : parsed;
+        }
 
-    function percentileOf(value) {
-      if (isNaN(value)) return 0;
-      const index = valid.findIndex(v => v >= value);
-      const rank = index === -1 ? valid.length : index + 1;
-      return (rank / valid.length) * 100;
-    }
+        // Calculate Week 2 Ranks to determine change
+        // Create a map of player_name -> week2_rank
+        const week2Sorted = [...data].sort((a, b) => {
+          const sA = parseScore(a.score_week2);
+          const sB = parseScore(b.score_week2);
+          return sB - sA; // Descending
+        });
+        const week2Ranks = {};
+        week2Sorted.forEach((p, i) => {
+          if (p.player_name) week2Ranks[p.player_name] = i + 1;
+        });
 
-    function pctClass(value) {
-      const pct = percentileOf(value);
-      if (pct >= 99) return 'p99';
-      if (pct >= 95) return 'p95';
-      if (pct >= 75) return 'p75';
-      if (pct >= 50) return 'p50';
-      return 'p25';
-    }
+        // Sort by Rank (Ascending) for current display
+        data.forEach((p, i) => {
+          p._calculatedIncrease = increases[i];
+        });
 
-    function formatScore(val) {
-      if (!val) return '';
-      if (typeof val === 'number') return val.toLocaleString('de-DE');
-      const parsed = parseFloat(val.toString().replace(/\./g,'').replace(',', '.'));
-      return isNaN(parsed) ? val : parsed.toLocaleString('de-DE');
-    }
+        data.sort((a, b) => {
+          if (a.rank === null) return 1; // Gone/Unranked to bottom
+          if (b.rank === null) return -1;
+          return a.rank - b.rank;
+        });
 
-    const tbody = document.querySelector('#board tbody');
-    tbody.innerHTML = '';
+        const validIncreases = data.map(p => p._calculatedIncrease).filter(v => !isNaN(v)).sort((a, b) => a - b);
 
-    data.forEach((p, i) => {
-      const increase = increases[i];
-      const incDisplay = isNaN(increase) ? '-' : increase.toFixed(2).replace('.', ',') + '%';
-      const incClass = pctClass(increase);
-      const nameClass = ['p99', 'p95'].includes(incClass) ? incClass : '';
+        function percentileOf(value) {
+          if (isNaN(value)) return 0;
+          const index = validIncreases.findIndex(v => v >= value);
+          const rank = index === -1 ? validIncreases.length : index + 1;
+          return (rank / validIncreases.length) * 100;
+        }
 
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td class="rank" data-label="Rank">#${p.rank ?? ''}</td>
+        function pctClass(value) {
+          const pct = percentileOf(value);
+          if (pct >= 99) return 'p99';
+          if (pct >= 95) return 'p95';
+          if (pct >= 75) return 'p75';
+          if (pct >= 50) return 'p50';
+          return 'p25';
+        }
+
+        function formatScore(val) {
+          if (val === null || val === undefined || val === '') return '';
+          if (typeof val === 'number') return val.toLocaleString('de-DE');
+          const parsed = parseFloat(val.toString().replace(/\./g, '').replace(',', '.'));
+          return isNaN(parsed) ? val : parsed.toLocaleString('de-DE');
+        }
+
+        function animateValue(obj, start, end, duration, isPercent) {
+          let startTimestamp = null;
+          let lastUpdate = 0;
+          const updateInterval = 50; // Update every 50ms for readability
+
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+
+            // Only update if enough time has passed or it's the final frame
+            if (timestamp - lastUpdate >= updateInterval || progress === 1) {
+              // Ease-out effect
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              const current = easeProgress * (end - start) + start;
+
+              if (isPercent) {
+                obj.innerHTML = current.toFixed(2).replace('.', ',') + '%';
+                // Dynamic font size: 0.9rem base + scaling factor
+                // Scale: 50% increase adds ~0.5rem. 
+                const size = 0.9 + (Math.abs(current) / 100) * 1.5;
+                obj.style.fontSize = Math.min(size, 2.5) + 'rem'; // Cap at 2.5rem
+              } else {
+                obj.innerHTML = formatScore(Math.floor(current));
+                // Color during counting
+                obj.style.color = '#00bcd4'; // Theme cyan
+                obj.style.fontWeight = 'normal';
+                // Add jitter class
+                if (!obj.classList.contains('jitter')) obj.classList.add('jitter');
+              }
+              lastUpdate = timestamp;
+            }
+
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            } else {
+              if (isPercent) {
+                obj.innerHTML = end.toFixed(2).replace('.', ',') + '%';
+                obj.style.fontSize = ''; // Reset to normal
+              } else {
+                obj.innerHTML = formatScore(end);
+                // Reset color and set bold
+                obj.style.color = '';
+                obj.style.fontWeight = '700';
+                // Remove jitter
+                obj.classList.remove('jitter');
+              }
+            }
+          };
+          window.requestAnimationFrame(step);
+        }
+
+        const tbody = document.querySelector('#board tbody');
+        tbody.innerHTML = '';
+
+        data.forEach((p, i) => {
+          // Skip gone players
+          if (p.status === 'gone') return;
+
+          const increase = p._calculatedIncrease;
+          const incClass = pctClass(increase);
+          const nameClass = ['p99', 'p95'].includes(incClass) ? incClass : '';
+
+          const tr = document.createElement('tr');
+
+          // Rank Change Calculation
+          let rankChangeHtml = '';
+          const s1 = parseScore(p.score_week1);
+          const s2 = parseScore(p.score_week2);
+
+          if (s1 === 0 && s2 === 0) {
+            // New player (no scores in W1/W2)
+            rankChangeHtml = `<span class="rank-change new">(new)</span>`;
+          } else if (p.rank && p.player_name && week2Ranks[p.player_name]) {
+            const prev = week2Ranks[p.player_name];
+            const diff = prev - p.rank; // Positive means moved up (e.g. 5 -> 3, diff = 2)
+            if (diff > 0) {
+              rankChangeHtml = `<span class="rank-change up">(+${diff})</span>`;
+            } else if (diff < 0) {
+              rankChangeHtml = `<span class="rank-change down">(${diff})</span>`;
+            } else {
+              rankChangeHtml = `<span class="rank-change same">(-)</span>`;
+            }
+          }
+
+          const rankDisplay = p.rank ? `#${p.rank}${rankChangeHtml}` : '-';
+
+          // IDs for animation
+          const scoreId = `score-w3-${i}`;
+          const incId = `inc-${i}`;
+
+          tr.innerHTML = `
+        <td class="rank" data-label="Rank">${rankDisplay}</td>
         <td class="player ${nameClass}" data-label="Player">${escapeHtml(p.player_name ?? '')}</td>
         <td class="score" data-label="Score (W1)">${formatScore(p.score_week1)}</td>
         <td class="score" data-label="Score (W2)">${formatScore(p.score_week2)}</td>
-        <td class="increase ${incClass}" data-label="Increase %">${incDisplay}</td>
+        <td class="score" data-label="Score (W3)"><span id="${scoreId}"></span></td>
+        <td class="increase ${incClass}" data-label="Increase %"><span id="${incId}"></span></td>
         <td class="remark" data-label="Remarks">${escapeHtml(p.remarks ?? p.Remarks ?? '—')}</td>
       `;
-      tbody.appendChild(tr);
-    });
+          tbody.appendChild(tr);
 
-  } catch (err) {
-    console.error('Error loading leaderboard:', err);
-    const tbody = document.querySelector('#board tbody');
-    tbody.innerHTML = `<tr><td colspan="6" style="padding:12px;color:#666;">Could not load leaderboard.json — check console.</td></tr>`;
-  }
+          // Trigger animations logic moved to IntersectionObserver
+          const scoreEl = document.getElementById(scoreId);
+          const incEl = document.getElementById(incId);
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g,'&amp;')
-      .replace(/</g,'&lt;')
-      .replace(/>/g,'&gt;');
-  }
-})();
-</script>
+          // Setup Score W3 for animation
+          const scoreVal = parseScore(p.score_week3);
+          if (scoreVal > 0) {
+            scoreEl.dataset.end = scoreVal;
+            scoreEl.dataset.isPercent = "false";
+            scoreEl.classList.add('animate-on-scroll');
+          } else {
+            scoreEl.innerHTML = formatScore(p.score_week3);
+          }
+
+          // Setup Increase for animation
+          if (!isNaN(increase)) {
+            incEl.dataset.end = increase;
+            incEl.dataset.isPercent = "true";
+            incEl.classList.add('animate-on-scroll');
+          } else {
+            incEl.innerHTML = '-';
+          }
+        });
+
+        // IntersectionObserver for scroll-triggered animations
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              const end = parseFloat(el.dataset.end);
+              const isPercent = el.dataset.isPercent === "true";
+
+              // Start animation
+              animateValue(el, 0, end, 5000, isPercent);
+
+              // Stop observing once started
+              obs.unobserve(el);
+            }
+          });
+        }, { threshold: 0.1 }); // Trigger when 10% visible
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+      } catch (err) {
+        console.error('Error loading leaderboard:', err);
+        const tbody = document.querySelector('#board tbody');
+        tbody.innerHTML = `<tr><td colspan="7" style="padding:12px;color:#666;">Could not load leaderboard.json — check console.</td></tr>`;
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+    })();
+  </script>
 </body>
+
 </html>

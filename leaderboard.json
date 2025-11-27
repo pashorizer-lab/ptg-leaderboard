@@ -1,802 +1,1046 @@
-﻿[
-  {
-    "rank": 1,
-    "player_name": "Baatz",
-    "score_week1": 60007417,
-    "score_week2": 84609637,
-    "weekly_increase": "41.00",
-    "remarks": "🚀 Absolutely unhinged. Baatz left the atmosphere while SlimB was still fueling up. Relax, Elon Musk."
-  },
-  {
-    "rank": 2,
-    "player_name": "SlimB",
-    "score_week1": 43439462,
-    "score_week2": 58704915,
-    "weekly_increase": "35.14",
-    "remarks": "🔥 Great push, SlimB! Still chasing Baatz’s rocket trail though — bring extra boosters next week."
-  },
-  {
-    "rank": 3,
-    "player_name": "TKB",
-    "score_week1": 42757346,
-    "score_week2": 50294127,
-    "weekly_increase": "17.63",
-    "remarks": "🐢 TKB’s in cruise control. Respectable, but Jacob and BAN3304 are charging — wake that engine."
-  },
-  {
-    "rank": 4,
-    "player_name": "REDGUN",
-    "score_week1": 38026680,
-    "score_week2": 42983312,
-    "weekly_increase": "13.03",
-    "remarks": "🔫 REDGUN misfired this week — Calling1906 and TKB are getting better aim. Reload and practice."
-  },
-  {
-    "rank": 5,
-    "player_name": "Calling1906",
-    "score_week1": 36583751,
-    "score_week2": 42961733,
-    "weekly_increase": "17.43",
-    "remarks": "☎️ Called an upgrade, answered halfway. Jacob and BAN3304 are knocking — pick up or get left on voicemail."
-  },
-  {
-    "rank": 6,
-    "player_name": "Jacob",
-    "score_week1": 33312814,
-    "score_week2": 41778698,
-    "weekly_increase": "25.41",
-    "remarks": "💪 Jacob bench-pressed the leaderboard — BAN3304, watch your back. Keep flexing."
-  },
-  {
-    "rank": 7,
-    "player_name": "BAN3304",
-    "score_week1": 32770587,
-    "score_week2": 41752321,
-    "weekly_increase": "27.41",
-    "remarks": "⚡ BAN came in hot — you and Jacob are making a two-man uprising. Don’t stop now."
-  },
-  {
-    "rank": 8,
-    "player_name": "Jack",
-    "score_week1": 32020974,
-    "score_week2": 38954729,
-    "weekly_increase": "21.65",
-    "remarks": "🧭 Steady climb, Jack. DragoneDaughter’s breathing fire behind you — no loafing on the throne."
-  },
-  {
-    "rank": 9,
-    "player_name": "DragoneDaughter",
-    "score_week1": 30800094,
-    "score_week2": 37102994,
-    "weekly_increase": "20.46",
-    "remarks": "🐉 Nice flames, but Jack’s still flying higher. Go full dragon next week."
-  },
-  {
-    "rank": 10,
-    "player_name": "RonRon",
-    "score_week1": 30005822,
-    "score_week2": 36828723,
-    "weekly_increase": "22.74",
-    "remarks": "☕ Quiet and lethal. Surpassed Gargoyle this round — keep brewing that strategy."
-  },
-  {
-    "rank": 11,
-    "player_name": "Gargoyle",
-    "score_week1": 29008327,
-    "score_week2": 36495397,
-    "weekly_increase": "25.81",
-    "remarks": "🗿 Stone-cold climb. Headstar111 is chipping at your rock — don’t get cracked."
-  },
-  {
-    "rank": 12,
-    "player_name": "headstar111",
-    "score_week1": 28359644,
-    "score_week2": 35781337,
-    "weekly_increase": "26.17",
-    "remarks": "🌟 Shooting star energy. Slightly outshining Gargoyle — don’t burn out too soon."
-  },
-  {
-    "rank": 13,
-    "player_name": "Bary89",
-    "score_week1": 28291043,
-    "score_week2": 35133536,
-    "weekly_increase": "24.19",
-    "remarks": "⚙️ Smart grind. battlefield 777 is closing with explosives — keep your shield up."
-  },
-  {
-    "rank": 14,
-    "player_name": "battlefield 777",
-    "score_week1": 27263230,
-    "score_week2": 34198751,
-    "weekly_increase": "25.44",
-    "remarks": "💣 Explosive week! Bary89 — you’ve got a grenade in your lane. Keep moving."
-  },
-  {
-    "rank": 15,
-    "player_name": "Val",
-    "score_week1": 26383760,
-    "score_week2": 33511064,
-    "weekly_increase": "27.01",
-    "remarks": "👑 Smooth operator. Passing battlefield with style — someone hire Val for PR."
-  },
-  {
-    "rank": 16,
-    "player_name": "Wolfgang",
-    "score_week1": 26342346,
-    "score_week2": 32469291,
-    "weekly_increase": "23.26",
-    "remarks": "🎶 Wolfgang howled up the ranks. Denis is humming louder — don’t lose the tempo."
-  },
-  {
-    "rank": 17,
-    "player_name": "denis",
-    "score_week1": 26069459,
-    "score_week2": 31955216,
-    "weekly_increase": "22.58",
-    "remarks": "🔧 Steady and efficient. GOTrockland is sharpening picks to steal your ores — mine faster."
-  },
-  {
-    "rank": 18,
-    "player_name": "GOTrockland",
-    "score_week1": 25932914,
-    "score_week2": 31666531,
-    "weekly_increase": "22.11",
-    "remarks": "🪨 Rock-solid gains. Denis barely edged you — swing a bigger pick next week."
-  },
-  {
-    "rank": 19,
-    "player_name": "jorgemove",
-    "score_week1": 25916837,
-    "score_week2": 31106064,
-    "weekly_increase": "20.02",
-    "remarks": "🐢 Jorge moved — but maybe in slow-mo. Dumb could trip and pass you; stay sharp."
-  },
-  {
-    "rank": 20,
-    "player_name": "Dumb",
-    "score_week1": 25444216,
-    "score_week2": 31080682,
-    "weekly_increase": "22.15",
-    "remarks": "🤡 Name says Dumb, stats say cunning. Keep surprising the haters."
-  },
-  {
-    "rank": 21,
-    "player_name": "Fatal",
-    "score_week1": 24606898,
-    "score_week2": 31004715,
-    "weekly_increase": "26.00",
-    "remarks": "💀 Fatal damage delivered — Lady Wilde felt that. Stay deadly."
-  },
-  {
-    "rank": 22,
-    "player_name": "Lady Wilde",
-    "score_week1": 24208308,
-    "score_week2": 31072267,
-    "weekly_increase": "28.35",
-    "remarks": "👑 Fierce and elegant. You just outpaced Fatal — claws out, crown on."
-  },
-  {
-    "rank": 23,
-    "player_name": "Alyonka",
-    "score_week1": 23716253,
-    "score_week2": 30573859,
-    "weekly_increase": "28.92",
-    "remarks": "🍬 Sweet surge! GT3, you’re in a sugar rush race — good luck keeping up."
-  },
-  {
-    "rank": 24,
-    "player_name": "GT3",
-    "score_week1": 23711651,
-    "score_week2": 30493896,
-    "weekly_increase": "28.60",
-    "remarks": "🏎️ Speed demon. Bumper-to-bumper with Alyonka — next lap decides the duel."
-  },
-  {
-    "rank": 25,
-    "player_name": "ChesSen",
-    "score_week1": 23381069,
-    "score_week2": 30202525,
-    "weekly_increase": "29.18",
-    "remarks": "🧠 Chess master moves. TAINETHISBEAST needs to learn your openings. Keep scheming."
-  },
-  {
-    "rank": 26,
-    "player_name": "TAINETHISBEAST",
-    "score_week1": 23092508,
-    "score_week2": 28718536,
-    "weekly_increase": "24.36",
-    "remarks": "🐾 Beast-y results but ChesSen outplayed you — sharpen those instincts."
-  },
-  {
-    "rank": 27,
-    "player_name": "Arygma",
-    "score_week1": 22982535,
-    "score_week2": 28668756,
-    "weekly_increase": "24.74",
-    "remarks": "🧙 Balanced magic — Demosedinara is trailing your wand. Cast louder spells."
-  },
-  {
-    "rank": 28,
-    "player_name": "Demosedinara",
-    "score_week1": 22826563,
-    "score_week2": 28206832,
-    "weekly_increase": "23.57",
-    "remarks": "💫 Close behind Arygma. One bigger spell and you’ll steal the show."
-  },
-  {
-    "rank": 29,
-    "player_name": "Lords of Fenika",
-    "score_week1": 22684781,
-    "score_week2": 27628734,
-    "weekly_increase": "21.79",
-    "remarks": "⚔️ Lords of… mid-table. Almutairi’s plotting a revolt — guard your throne."
-  },
-  {
-    "rank": 30,
-    "player_name": "Almutairi",
-    "score_week1": 22672575,
-    "score_week2": 27215637,
-    "weekly_increase": "20.04",
-    "remarks": "🏰 Slow and steady siege. The Lords still rule, but you’re chipping the walls."
-  },
-  {
-    "rank": 31,
-    "player_name": "KOU",
-    "score_week1": 22434040,
-    "score_week2": 26604535,
-    "weekly_increase": "18.59",
-    "remarks": "🎭 Background actor turned scene-stealer? KOU, you’re close — push for a solo."
-  },
-  {
-    "rank": 32,
-    "player_name": "Odin",
-    "score_week1": 22160865,
-    "score_week2": 26594635,
-    "weekly_increase": "20.01",
-    "remarks": "⚡ Not all gods thunder — Odin’s more like a polite zap. KOU’s creeping up; roar louder."
-  },
-  {
-    "rank": 33,
-    "player_name": "kitch28",
-    "score_week1": 21998870,
-    "score_week2": 26434305,
-    "weekly_increase": "20.16",
-    "remarks": "🍳 Chef’s special growth. Karolina’s got secret sauce though — find yours."
-  },
-  {
-    "rank": 34,
-    "player_name": "Karolina",
-    "score_week1": 21882762,
-    "score_week2": 25913691,
-    "weekly_increase": "18.42",
-    "remarks": "💃 Pretty gains, but Hosh is twinkling harder. Turn up the sparkle."
-  },
-  {
-    "rank": 35,
-    "player_name": "Hosh",
-    "score_week1": 21426137,
-    "score_week2": 25537581,
-    "weekly_increase": "19.19",
-    "remarks": "🌠 Hosh’s glow is steady — Karolina watch your starry tail. Keep shining."
-  },
-  {
-    "rank": 36,
-    "player_name": "우유빛",
-    "score_week1": 21412392,
-    "score_week2": 25404020,
-    "weekly_increase": "18.64",
-    "remarks": "🥛 Smooth growth like milk — 두두엘 is right behind; don’t let them steal the pour."
-  },
-  {
-    "rank": 37,
-    "player_name": "두두엘",
-    "score_week1": 21332334,
-    "score_week2": 25364610,
-    "weekly_increase": "18.90",
-    "remarks": "⚔️ Close duel with 우유빛 — time to swing harder and claim the shelf."
-  },
-  {
-    "rank": 38,
-    "player_name": "Heinrich d Kate",
-    "score_week1": 21227342,
-    "score_week2": 25275691,
-    "weekly_increase": "19.07",
-    "remarks": "🏰 Old-world steady. Xavier and Cimi are circling — fortify your keeps."
-  },
-  {
-    "rank": 39,
-    "player_name": "Xavier",
-    "score_week1": 21219572,
-    "score_week2": 25109387,
-    "weekly_increase": "18.33",
-    "remarks": "🧭 Navigated up nicely, but Cimi and Heinrich are sniffing your map. Steer sharp."
-  },
-  {
-    "rank": 40,
-    "player_name": "Cimi",
-    "score_week1": 21211534,
-    "score_week2": 25102567,
-    "weekly_increase": "18.34",
-    "remarks": "🌿 Quiet but effective — Xavier’s breathing down your neck. Keep the pace."
-  },
-  {
-    "rank": 41,
-    "player_name": "Rink",
-    "score_week1": 21001744,
-    "score_week2": 24942362,
-    "weekly_increase": "18.76",
-    "remarks": "🌀 Rink spun up a decent surge — Shahd’s next in line; don’t get dizzy."
-  },
-  {
-    "rank": 42,
-    "player_name": "Shahd",
-    "score_week1": 20943895,
-    "score_week2": 24717340,
-    "weekly_increase": "18.02",
-    "remarks": "🌸 Graceful climb, but Michilino and Rink are inching closer. Bloom harder."
-  },
-  {
-    "rank": 43,
-    "player_name": "Michilino",
-    "score_week1": 20925853,
-    "score_week2": 24651537,
-    "weekly_increase": "17.80",
-    "remarks": "🎨 Artistic progress. MinZ is polishing a faster brush — speed up the strokes."
-  },
-  {
-    "rank": 44,
-    "player_name": "MinZ",
-    "score_week1": 20866800,
-    "score_week2": 24388436,
-    "weekly_increase": "16.88",
-    "remarks": "🧩 Solid moves, but TrojanTroy is plotting a bigger puzzle. Finish it next week."
-  },
-  {
-    "rank": 45,
-    "player_name": "TrojanTroy",
-    "score_week1": 20818852,
-    "score_week2": 24363958,
-    "weekly_increase": "17.03",
-    "remarks": "🛡️ Trojan push — steady fortifications. Mustafa T might siege you if you stall."
-  },
-  {
-    "rank": 46,
-    "player_name": "Mustafa T",
-    "score_week1": 20765476,
-    "score_week2": 24131867,
-    "weekly_increase": "16.21",
-    "remarks": "🧭 Mustafa’s steady as a compass — not flashy, but won’t get lost. Keep navigating."
-  },
-  {
-    "rank": 47,
-    "player_name": "Thenamborn",
-    "score_week1": 20553122,
-    "score_week2": 24007189,
-    "weekly_increase": "16.81",
-    "remarks": "🐣 Thenamborn hatched good growth. 스스스 and GooG are pecking at your shell though."
-  },
-  {
-    "rank": 48,
-    "player_name": "스스스",
-    "score_week1": 20272591,
-    "score_week2": 23977458,
-    "weekly_increase": "18.28",
-    "remarks": "🐲 Korean flair — solid and spicy. Thenamborn, watch your tail — this player’s hungry."
-  },
-  {
-    "rank": 49,
-    "player_name": "GooG",
-    "score_week1": 20238153,
-    "score_week2": 23846979,
-    "weekly_increase": "17.83",
-    "remarks": "🤖 GooG’s algorithm produced a nice uptick — Winu and WR are testing your code. Patch fast."
-  },
-  {
-    "rank": 50,
-    "player_name": "Winu",
-    "score_week1": 20063638,
-    "score_week2": 23759343,
-    "weekly_increase": "18.42",
-    "remarks": "🏹 Winu hit the target — WR’s arrow is next to fly. Keep that aim steady."
-  },
-  {
-    "rank": 51,
-    "player_name": "WR",
-    "score_week1": 19909872,
-    "score_week2": 23723238,
-    "weekly_increase": "19.15",
-    "remarks": "🏁 WR revved nicely — but Winu’s still ahead. Step on it!"
-  },
-  {
-    "rank": 52,
-    "player_name": "No_Mercy",
-    "score_week1": 19900001,
-    "score_week2": 23260064,
-    "weekly_increase": "16.88",
-    "remarks": "⚙️ Maintenance mode — reliable, but rivals are tuning engines."
-  },
-  {
-    "rank": 53,
-    "player_name": "Gabi42051",
-    "score_week1": 19885092,
-    "score_week2": 23196796,
-    "weekly_increase": "16.65",
-    "remarks": "🧱 Gabi stacking blocks — keep building, the tower’s close."
-  },
-  {
-    "rank": 54,
-    "player_name": "Jahi",
-    "score_week1": 19859758,
-    "score_week2": 23145219,
-    "weekly_increase": "16.54",
-    "remarks": "🩰 Graceful steps up the ladder. Stretch for the next barre."
-  },
-  {
-    "rank": 55,
-    "player_name": "Mad King",
-    "score_week1": 19829158,
-    "score_week2": 23096535,
-    "weekly_increase": "16.48",
-    "remarks": "👑 Mad moves, but quiet. Claim the throne loudly next week."
-  },
-  {
-    "rank": 56,
-    "player_name": "Adamovic",
-    "score_week1": 19668039,
-    "score_week2": 23043801,
-    "weekly_increase": "17.16",
-    "remarks": "🏋️‍♂️ Strong lifts — keep gaining weight on that strategy."
-  },
-  {
-    "rank": 57,
-    "player_name": "Pavel 911",
-    "score_week1": 19552667,
-    "score_week2": 23039156,
-    "weekly_increase": "17.83",
-    "remarks": "🚨 Emergency boost! Pavel’s siren is blaring — good response."
-  },
-  {
-    "rank": 58,
-    "player_name": "iKalluRy",
-    "score_week1": 19342851,
-    "score_week2": 22996666,
-    "weekly_increase": "18.89",
-    "remarks": "⚡ iKalluRy electrified the board — sparks flying near RICKY."
-  },
-  {
-    "rank": 59,
-    "player_name": "RICKY",
-    "score_week1": 19232730,
-    "score_week2": 22901790,
-    "weekly_increase": "19.08",
-    "remarks": "🎯 RICKY hit the bullseye — Lord Ragnar’s watching your target."
-  },
-  {
-    "rank": 60,
-    "player_name": "Lord Ragnar",
-    "score_week1": 19211797,
-    "score_week2": 22887535,
-    "weekly_increase": "19.13",
-    "remarks": "🛡️ Ragnar’s shield held strong — SLINGER and Enya are circling."
-  },
-  {
-    "rank": 61,
-    "player_name": "SLINGER",
-    "score_week1": 19164693,
-    "score_week2": 22782606,
-    "weekly_increase": "18.88",
-    "remarks": "🏹 SLINGER shot steady — Enya might outpace you if you miss a shot."
-  },
-  {
-    "rank": 62,
-    "player_name": "Enya",
-    "score_week1": 18861067,
-    "score_week2": 22606797,
-    "weekly_increase": "19.86",
-    "remarks": "🎵 Enya’s melody climbed — adrianax is tuning a louder chorus."
-  },
-  {
-    "rank": 63,
-    "player_name": "adrianax",
-    "score_week1": 18718180,
-    "score_week2": 22565234,
-    "weekly_increase": "20.55",
-    "remarks": "🔊 adrianax turned the volume up — joewotgo, watch your ears."
-  },
-  {
-    "rank": 64,
-    "player_name": "joewotgo",
-    "score_week1": 18713784,
-    "score_week2": 22409953,
-    "weekly_increase": "19.75",
-    "remarks": "🌀 Spin and win — eFACUL355x is spinning a rival tornado."
-  },
-  {
-    "rank": 65,
-    "player_name": "eFACUL355x",
-    "score_week1": 18479539,
-    "score_week2": 22193296,
-    "weekly_increase": "20.10",
-    "remarks": "⚙️ Engine humming — Nick John is checking your oil."
-  },
-  {
-    "rank": 66,
-    "player_name": "Nick John",
-    "score_week1": 18457642,
-    "score_week2": 22024028,
-    "weekly_increase": "19.32",
-    "remarks": "🧭 Nick’s compass points up — sanjaybadam’s map is torn though."
-  },
-  {
-    "rank": 67,
-    "player_name": "sanjaybadam",
-    "score_week1": 18434707,
-    "score_week2": 21325104,
-    "weekly_increase": "15.68",
-    "remarks": "🐌 Slow crawl — Sheldon1907 is lapping while you nap. Wake up!"
-  },
-  {
-    "rank": 68,
-    "player_name": "Sheldon1907",
-    "score_week1": 18252166,
-    "score_week2": 21242169,
-    "weekly_increase": "16.38",
-    "remarks": "🔧 Quiet tinkering — BlankaQ is playing a faster arcade round."
-  },
-  {
-    "rank": 69,
-    "player_name": "BlankaQ",
-    "score_week1": 18229564,
-    "score_week2": 21007294,
-    "weekly_increase": "15.24",
-    "remarks": "⚡ Blink and you’ll miss gains — Friedrich Marx is sneaking past."
-  },
-  {
-    "rank": 70,
-    "player_name": "Friedrich Marx",
-    "score_week1": 18049322,
-    "score_week2": 20702753,
-    "weekly_increase": "14.70",
-    "remarks": "📚 Old school grind. Time to modernize your tactics."
-  },
-  {
-    "rank": 71,
-    "player_name": "Choon martina",
-    "score_week1": 17700927,
-    "score_week2": 20652945,
-    "weekly_increase": "16.68",
-    "remarks": "🌺 Blossom in progress — Handoumah is tending similar soil."
-  },
-  {
-    "rank": 72,
-    "player_name": "Handoumah",
-    "score_week1": 17705486,
-    "score_week2": 20603514,
-    "weekly_increase": "16.37",
-    "remarks": "🌾 Steady harvest — BaGe is cropping nearby. Protect your fields."
-  },
-  {
-    "rank": 73,
-    "player_name": "BaGe",
-    "score_week1": 17654995,
-    "score_week2": 20514181,
-    "weekly_increase": "16.19",
-    "remarks": "🔩 Consistent bolts — o(>_<)o Pudgyo(>_<)o is wobbling but climbing."
-  },
-  {
-    "rank": 74,
-    "player_name": "o(>_<)o Pudgyo(>_<)o",
-    "score_week1": 17434479,
-    "score_week2": 20342648,
-    "weekly_increase": "16.68",
-    "remarks": "🌀 Chaotic charm — dabby is free and stealing some limelight."
-  },
-  {
-    "rank": 75,
-    "player_name": "dabby is free",
-    "score_week1": 16963001,
-    "score_week2": 20306873,
-    "weekly_increase": "19.71",
-    "remarks": "🎉 Dabbed into freedom — Aliavee and Ramzi 0147 are in awe."
-  },
-  {
-    "rank": 76,
-    "player_name": "Aliavee",
-    "score_week1": 16862914,
-    "score_week2": 20234830,
-    "weekly_increase": "20.00",
-    "remarks": "🍃 Cool and composed — Ramzi 0147 is matching your chill."
-  },
-  {
-    "rank": 77,
-    "player_name": "Ramzi 0147",
-    "score_week1": 16753546,
-    "score_week2": 20187922,
-    "weekly_increase": "20.50",
-    "remarks": "🏁 Strong sprint — 小甜甜 is trailing but persistent."
-  },
-  {
-    "rank": 78,
-    "player_name": "小甜甜",
-    "score_week1": 16753490,
-    "score_week2": 20110700,
-    "weekly_increase": "20.04",
-    "remarks": "🍭 Sweet and steady — Jubang’s next to taste this candy."
-  },
-  {
-    "rank": 79,
-    "player_name": "Jubang",
-    "score_week1": 16570137,
-    "score_week2": 20079373,
-    "weekly_increase": "21.18",
-    "remarks": "🚀 Jubang launched! Minuzz better strap in."
-  },
-  {
-    "rank": 80,
-    "player_name": "Minuzz",
-    "score_week1": 16569714,
-    "score_week2": 19975945,
-    "weekly_increase": "20.56",
-    "remarks": "🛡️ Shield up — KingJM’s making a run for your crown."
-  },
-  {
-    "rank": 81,
-    "player_name": "KingJM",
-    "score_week1": 16522642,
-    "score_week2": 19936790,
-    "weekly_increase": "20.66",
-    "remarks": "👑 Regal climb — Katrumbina96 is plotting a coup."
-  },
-  {
-    "rank": 82,
-    "player_name": "katrumbina96",
-    "score_week1": 16510936,
-    "score_week2": 19642351,
-    "weekly_increase": "18.97",
-    "remarks": "🏹 Accurate shots — 전우진79 is swinging a wider net."
-  },
-  {
-    "rank": 83,
-    "player_name": "전우진79",
-    "score_week1": 16488364,
-    "score_week2": 19404685,
-    "weekly_increase": "17.69",
-    "remarks": "⚔️ Strong blade — Guapo Gato’s claws are nearby."
-  },
-  {
-    "rank": 84,
-    "player_name": "Guapo Gato",
-    "score_week1": 16390976,
-    "score_week2": 19365566,
-    "weekly_increase": "18.15",
-    "remarks": "🐱 Cunning and quick — lordnidem is stalking silently."
-  },
-  {
-    "rank": 85,
-    "player_name": "lordnidem",
-    "score_week1": 16370216,
-    "score_week2": 19220026,
-    "weekly_increase": "17.41",
-    "remarks": "🦴 Hungry growth — Fadhl is nibbling at the crumbs."
-  },
-  {
-    "rank": 86,
-    "player_name": "Fadhl",
-    "score_week1": 16365886,
-    "score_week2": 19207532,
-    "weekly_increase": "17.36",
-    "remarks": "🌪️ Fadhl’s whirlwind progress — jun212 better brace."
-  },
-  {
-    "rank": 87,
-    "player_name": "jun212",
-    "score_week1": 16259574,
-    "score_week2": 19151047,
-    "weekly_increase": "17.78",
-    "remarks": "🧭 Jun212 navigated well — LovelyFreddy is plotting a detour."
-  },
-  {
-    "rank": 88,
-    "player_name": "LovelyFreddy",
-    "score_week1": 16154791,
-    "score_week2": 18962629,
-    "weekly_increase": "17.38",
-    "remarks": "🎈 Cheerful ascent — Alodia’s following your confetti trail."
-  },
-  {
-    "rank": 89,
-    "player_name": "Alodia",
-    "score_week1": 15941683,
-    "score_week2": 18856591,
-    "weekly_increase": "18.28",
-    "remarks": "🌸 Blooming nicely — 몽구리 is next to admire the petals."
-  },
-  {
-    "rank": 90,
-    "player_name": "몽구리",
-    "score_week1": 15939570,
-    "score_week2": 18530862,
-    "weekly_increase": "16.26",
-    "remarks": "🐾 Gentle steps — Phong’s next to trot by."
-  },
-  {
-    "rank": 91,
-    "player_name": "Phong",
-    "score_week1": 15927379,
-    "score_week2": 18365800,
-    "weekly_increase": "15.31",
-    "remarks": "🌤️ Calm climb — R300’s winds might push you a bit."
-  },
-  {
-    "rank": 92,
-    "player_name": "R300",
-    "score_week1": 15913104,
-    "score_week2": 18348364,
-    "weekly_increase": "15.30",
-    "remarks": "🚗 R300 revved but cooled off — hi123 is revving behind."
-  },
-  {
-    "rank": 93,
-    "player_name": "hi123",
-    "score_week1": 15743697,
-    "score_week2": 18227706,
-    "weekly_increase": "15.78",
-    "remarks": "⌨️ Keyboard warrior — Angelina’s typing faster."
-  },
-  {
-    "rank": 94,
-    "player_name": "Angelina",
-    "score_week1": 15693290,
-    "score_week2": 18188408,
-    "weekly_increase": "15.90",
-    "remarks": "💃 Angelina danced past — Chbull might challenge your routine."
-  },
-  {
-    "rank": 95,
-    "player_name": "Chbull",
-    "score_week1": 15398938,
-    "score_week2": 18003020,
-    "weekly_increase": "16.91",
-    "remarks": "🐂 Bullish moves — Dawn’s horizon is looming."
-  },
-  {
-    "rank": 96,
-    "player_name": "Dawn",
-    "score_week1": 15295512,
-    "score_week2": 17390124,
-    "weekly_increase": "13.69",
-    "remarks": "🌅 Dawn rose but dimmed — karamat and jack_ are racing the sunrise."
-  },
-  {
-    "rank": 97,
-    "player_name": "karamat",
-    "score_week1": 14263980,
-    "score_week2": 17343777,
-    "weekly_increase": "21.59",
-    "remarks": "💥 Explosive surge! jack_ better hold on — you came out swinging."
-  },
-  {
-    "rank": 98,
-    "player_name": "jack_",
-    "score_week1": 13881579,
-    "score_week2": 17244308,
-    "weekly_increase": "24.22",
-    "remarks": "⚡ jack_ electrified the ranks — Lightinthe98, you’re glowing too."
-  },
-  {
-    "rank": 99,
-    "player_name": "Lightinthe98",
-    "score_week1": 13507628,
-    "score_week2": 16104321,
-    "weekly_increase": "19.22",
-    "remarks": "🔦 Shining steady — VIPFRESH is brewing a surprise behind the scenes."
-  },
-  {
-    "rank": 100,
-    "player_name": "VIPFRESH",
-    "score_week1": null,
-    "score_week2": 15352260,
-    "weekly_increase": "",
-    "remarks": "🥇 New arrival: VIPFRESH dropped in with guts. Welcome to the party — next week, climb faster!"
-  }
+[
+    {
+        "rank": 1,
+        "player_name": "Baatz",
+        "score_week1": 60007417,
+        "score_week2": 84609637,
+        "weekly_increase": "8.62",
+        "remarks": "⚓ Baatz dropped anchor. No movement. TK8 is climbing though.",
+        "score_week3": 91904650
+    },
+    {
+        "rank": 2,
+        "player_name": "TK8",
+        "score_week1": 42757346,
+        "score_week2": 50294127,
+        "weekly_increase": "25.93",
+        "remarks": "💪 TK8 flexed a bit. Up 1. Baatz is within reach.",
+        "score_week3": 63334795
+    },
+    {
+        "rank": 3,
+        "player_name": "Colling1908",
+        "score_week1": 36583751,
+        "score_week2": 42961733,
+        "weekly_increase": "29.19",
+        "remarks": "👀 Colling1908 is creeping up (+2). TK8, watch your back.",
+        "score_week3": 55500330
+    },
+    {
+        "rank": 4,
+        "player_name": "REIGUN",
+        "score_week1": 38026680,
+        "score_week2": 42983312,
+        "weekly_increase": "26.29",
+        "remarks": "🗿 REIGUN is a statue. Zero movement. Colling1908 is bored of your face.",
+        "score_week3": 54282068
+    },
+    {
+        "rank": 5,
+        "player_name": "BAN3384",
+        "score_week1": 32770587,
+        "score_week2": 41752321,
+        "weekly_increase": "28.28",
+        "remarks": "👀 BAN3384 is creeping up (+2). REIGUN, watch your back.",
+        "score_week3": 53560323
+    },
+    {
+        "rank": 6,
+        "player_name": "lazdh",
+        "score_week1": 33312814,
+        "score_week2": 41778698,
+        "weekly_increase": "24.22",
+        "remarks": "⛺ lazdh set up camp at #6. Comfortable? Jack wants your tent.",
+        "score_week3": 51899396
+    },
+    {
+        "rank": 7,
+        "player_name": "Jack",
+        "score_week1": 32020974,
+        "score_week2": 38954729,
+        "weekly_increase": "32.63",
+        "remarks": "💪 Jack flexed a bit. Up 1. lazdh is within reach.",
+        "score_week3": 51666222
+    },
+    {
+        "rank": 8,
+        "player_name": "Baryl89",
+        "score_week1": 28291043,
+        "score_week2": 35133536,
+        "weekly_increase": "38.42",
+        "remarks": "💨 Zoom! Baryl89 flew past 5 people. battlefield 777 didn't even see it coming.",
+        "score_week3": 48630364
+    },
+    {
+        "rank": 9,
+        "player_name": "battlefield 777",
+        "score_week1": 27263230,
+        "score_week2": 34198751,
+        "weekly_increase": "38.90",
+        "remarks": "🧗‍♀️ battlefield 777 is speedrunning this leaderboard. +5 ranks. Baryl89 is sweating.",
+        "score_week3": 47501690
+    },
+    {
+        "rank": 10,
+        "player_name": "DragonsDaughter",
+        "score_week1": 30800094,
+        "score_week2": 37102994,
+        "weekly_increase": "26.73",
+        "remarks": "🔻 DragonsDaughter slid down a bit. battlefield 777 stole your spot.",
+        "score_week3": 47020719
+    },
+    {
+        "rank": 11,
+        "player_name": "Lady Vilda",
+        "score_week1": 24208308,
+        "score_week2": 31072267,
+        "weekly_increase": "45.21",
+        "remarks": "💨 Zoom! Lady Vilda flew past 10 people. CheeSen didn't even see it coming.",
+        "score_week3": 45120387
+    },
+    {
+        "rank": 12,
+        "player_name": "CheeSen",
+        "score_week1": 23381069,
+        "score_week2": 30202525,
+        "weekly_increase": "46.74",
+        "remarks": "🧗‍♀️ CheeSen is speedrunning this leaderboard. +13 ranks. Lady Vilda is sweating.",
+        "score_week3": 44318365
+    },
+    {
+        "rank": 13,
+        "player_name": "N97",
+        "score_week1": 28359644,
+        "score_week2": 35781337,
+        "weekly_increase": "22.43",
+        "remarks": "🤔 N97 lost 1 spots. RouRou is breathing down your neck.",
+        "score_week3": 43806229
+    },
+    {
+        "rank": 14,
+        "player_name": "RouRou",
+        "score_week1": 30005822,
+        "score_week2": 36828723,
+        "weekly_increase": "18.29",
+        "remarks": "🔻 RouRou slid down a bit. N97 stole your spot.",
+        "score_week3": 43563517
+    },
+    {
+        "rank": 15,
+        "player_name": "Gargoyle",
+        "score_week1": 29008327,
+        "score_week2": 36495397,
+        "weekly_increase": "20.40",
+        "remarks": "🔻 Gargoyle slid down a bit. RouRou stole your spot.",
+        "score_week3": 43939691
+    },
+    {
+        "rank": 16,
+        "player_name": "deniz",
+        "score_week1": 26069459,
+        "score_week2": 31955216,
+        "weekly_increase": "33.41",
+        "remarks": "🐢 Slow and steady wins the race, deniz. +1 ranks. Keep pushing.",
+        "score_week3": 42632330
+    },
+    {
+        "rank": 17,
+        "player_name": "loraxswe",
+        "score_week1": 25916837,
+        "score_week2": 31106064,
+        "weekly_increase": "36.96",
+        "remarks": "🐢 Slow and steady wins the race, loraxswe. +2 ranks. Keep pushing.",
+        "score_week3": 42603686
+    },
+    {
+        "rank": 18,
+        "player_name": "Doob",
+        "score_week1": 25444216,
+        "score_week2": 31080682,
+        "weekly_increase": "34.78",
+        "remarks": "🐢 Slow and steady wins the race, Doob. +2 ranks. Keep pushing.",
+        "score_week3": 41890660
+    },
+    {
+        "rank": 19,
+        "player_name": "Anygma",
+        "score_week1": 22982535,
+        "score_week2": 28668756,
+        "weekly_increase": "45.83",
+        "remarks": "📈 STONKS! Anygma is mooning. +8 spots! Doob, check your rearview!",
+        "score_week3": 41808700
+    },
+    {
+        "rank": 20,
+        "player_name": "GOTreckted",
+        "score_week1": 25932914,
+        "score_week2": 31666531,
+        "weekly_increase": "30.42",
+        "remarks": "🔻 GOTreckted slid down a bit. Anygma stole your spot.",
+        "score_week3": 41299002
+    },
+    {
+        "rank": 21,
+        "player_name": "Val",
+        "score_week1": 26383760,
+        "score_week2": 33511064,
+        "weekly_increase": "23.02",
+        "remarks": "📉 Val is tanking. -6. Did you forget to play?",
+        "score_week3": 41226376
+    },
+    {
+        "rank": 22,
+        "player_name": "KIU",
+        "score_week1": 22434040,
+        "score_week2": 26604535,
+        "weekly_increase": "45.03",
+        "remarks": "🔥 KIU is on a rampage! Jumped 9 spots. Who needs brakes?",
+        "score_week3": 38585869
+    },
+    {
+        "rank": 23,
+        "player_name": "Haak",
+        "score_week1": 21426137,
+        "score_week2": 25537581,
+        "score_week3": 37511795,
+        "weekly_increase": "46.89",
+        "remarks": "🧗‍♀️ Haak is speedrunning this leaderboard. +12 ranks. KIU is sweating."
+    },
+    {
+        "rank": 24,
+        "player_name": "Heinrich d Xste",
+        "score_week1": 21227342,
+        "score_week2": 25275691,
+        "weekly_increase": "46.40",
+        "remarks": "📈 STONKS! Heinrich d Xste is mooning. +14 spots! Haak, check your rearview!",
+        "score_week3": 37004106
+    },
+    {
+        "rank": 25,
+        "player_name": "두부짱",
+        "score_week1": 21332334,
+        "score_week2": 25364610,
+        "weekly_increase": "43.90",
+        "remarks": "📈 STONKS! 두부짱 is mooning. +12 spots! Heinrich d Xste, check your rearview!",
+        "score_week3": 36500572
+    },
+    {
+        "rank": 26,
+        "player_name": "Lords of Fonika",
+        "score_week1": 22684781,
+        "score_week2": 27628734,
+        "weekly_increase": "31.89",
+        "remarks": "😏 Lords of Fonika slid up 3 spots. TAMETHISBEAST is making excuses.",
+        "score_week3": 36440205
+    },
+    {
+        "rank": 27,
+        "player_name": "TAMETHISBEAST",
+        "score_week1": 23092508,
+        "score_week2": 28718536,
+        "weekly_increase": "26.39",
+        "remarks": "😬 TAMETHISBEAST slipped slightly (-1). Just a stumble or a trend?",
+        "score_week3": 36298612
+    },
+    {
+        "rank": 28,
+        "player_name": "Wimz",
+        "score_week1": 20063638,
+        "score_week2": 23759343,
+        "weekly_increase": "52.16",
+        "remarks": "💨 Zoom! Wimz flew past 22 people. Odin didn't even see it coming.",
+        "score_week3": 36153066
+    },
+    {
+        "rank": 29,
+        "player_name": "Odin",
+        "score_week1": 22160865,
+        "score_week2": 26594635,
+        "weekly_increase": "34.94",
+        "remarks": "😏 Odin slid up 3 spots. 李歐王 is making excuses.",
+        "score_week3": 35887812
+    },
+    {
+        "rank": 30,
+        "player_name": "李歐王",
+        "score_week1": 21412392,
+        "score_week2": 25404020,
+        "weekly_increase": "41.15",
+        "remarks": "🔥 李歐王 is on a rampage! Jumped 6 spots. Who needs brakes?",
+        "score_week3": 35857753
+    },
+    {
+        "rank": 31,
+        "player_name": "Cimi",
+        "score_week1": 21211534,
+        "score_week2": 25102567,
+        "weekly_increase": "41.02",
+        "remarks": "📈 STONKS! Cimi is mooning. +9 spots! 李歐王, check your rearview!",
+        "score_week3": 35399199
+    },
+    {
+        "rank": 32,
+        "player_name": "SLINGER",
+        "score_week1": 19164693,
+        "score_week2": 22782606,
+        "weekly_increase": "55.33",
+        "remarks": "🚀 SLINGER strapped a rocket on! +29 ranks. Michilino is eating your dust.",
+        "score_week3": 35388555
+    },
+    {
+        "rank": 33,
+        "player_name": "Michilino",
+        "score_week1": 20925853,
+        "score_week2": 24651537,
+        "weekly_increase": "43.53",
+        "remarks": "🧗‍♀️ Michilino is speedrunning this leaderboard. +10 ranks. SLINGER is sweating.",
+        "score_week3": 35383178
+    },
+    {
+        "rank": 34,
+        "player_name": "Wolfgang",
+        "score_week1": 26342346,
+        "score_week2": 32469291,
+        "weekly_increase": "8.10",
+        "remarks": "💤 Wolfgang fell asleep at the wheel. Dropped 18 ranks. Wake up!",
+        "score_week3": 35098066
+    },
+    {
+        "rank": 35,
+        "player_name": "Alyonka",
+        "score_week1": 23716253,
+        "score_week2": 30573859,
+        "weekly_increase": "14.70",
+        "remarks": "🤕 Oof. Alyonka tumbled down 12 spots. Karolina is laughing.",
+        "score_week3": 35067366
+    },
+    {
+        "rank": 36,
+        "player_name": "Karolina",
+        "score_week1": 21882762,
+        "score_week2": 25913691,
+        "weekly_increase": "35.22",
+        "remarks": "📉 Tiny dip for Karolina. Alyonka passed you. Revenge next week?",
+        "score_week3": 35039289
+    },
+    {
+        "rank": 37,
+        "player_name": "스맛스루",
+        "score_week1": 20272591,
+        "score_week2": 23977458,
+        "weekly_increase": "45.85",
+        "remarks": "🚀 스맛스루 strapped a rocket on! +11 ranks. kitch28 is eating your dust.",
+        "score_week3": 34971420
+    },
+    {
+        "rank": 38,
+        "player_name": "kitch28",
+        "score_week1": 21998870,
+        "score_week2": 26434305,
+        "weekly_increase": "31.77",
+        "remarks": "📉 kitch28 is tanking. -5. Did you forget to play?",
+        "score_week3": 34833304
+    },
+    {
+        "rank": 39,
+        "player_name": "Rock",
+        "score_week1": 21001744,
+        "score_week2": 24942362,
+        "weekly_increase": "39.57",
+        "remarks": "👀 Rock is creeping up (+2). kitch28, watch your back.",
+        "score_week3": 34810996
+    },
+    {
+        "rank": 40,
+        "player_name": "Apex R!sk",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 34805829,
+        "weekly_increase": "",
+        "remarks": "👋 Welcome Apex R!sk! You're new here. MOODY is already plotting your downfall."
+    },
+    {
+        "rank": 41,
+        "player_name": "MOODY",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 34559505,
+        "weekly_increase": "",
+        "remarks": "✨ A wild MOODY appeared! No history, just vibes. Good luck catching Apex R!sk."
+    },
+    {
+        "rank": 42,
+        "player_name": "GT3",
+        "score_week1": 23711651,
+        "score_week2": 30493896,
+        "weekly_increase": "12.92",
+        "remarks": "🤕 Oof. GT3 tumbled down 18 spots. sanjaybadass is laughing.",
+        "score_week3": 34434201
+    },
+    {
+        "rank": 43,
+        "player_name": "sanjaybadass",
+        "score_week1": 18434707,
+        "score_week2": 21325104,
+        "weekly_increase": "60.72",
+        "remarks": "🔥 sanjaybadass is cooking! +60.72% growth? Did you rob a bank?",
+        "score_week3": 34274643
+    },
+    {
+        "rank": 44,
+        "player_name": "Shaiko",
+        "score_week1": 20943895,
+        "score_week2": 24717340,
+        "weekly_increase": "36.37",
+        "remarks": "😬 Shaiko slipped slightly (-2). Just a stumble or a trend?",
+        "score_week3": 33707178
+    },
+    {
+        "rank": 45,
+        "player_name": "OooO",
+        "score_week1": 20238153,
+        "score_week2": 23846979,
+        "weekly_increase": "41.32",
+        "remarks": "😏 OooO slid up 4 spots. dobby is free is making excuses.",
+        "score_week3": 33701069
+    },
+    {
+        "rank": 46,
+        "player_name": "dobby is free",
+        "score_week1": 16963001,
+        "score_week2": 20306873,
+        "weekly_increase": "62.69",
+        "remarks": "🚀 dobby is free strapped a rocket on! +29 ranks. dengske is eating your dust.",
+        "score_week3": 33037505
+    },
+    {
+        "rank": 47,
+        "player_name": "dengske",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 32297676,
+        "weekly_increase": "",
+        "remarks": "🆕 dengske joined the chat. dobby is free is wondering who invited you."
+    },
+    {
+        "rank": 48,
+        "player_name": "Miloz",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 32254707,
+        "weekly_increase": "",
+        "remarks": "🆕 Miloz joined the chat. dengske is wondering who invited you."
+    },
+    {
+        "rank": 49,
+        "player_name": "Colbertmcpunch",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 32227896,
+        "weekly_increase": "",
+        "remarks": "👶 Baby steps for Colbertmcpunch. First week on the board. Don't trip!"
+    },
+    {
+        "rank": 50,
+        "player_name": "Enyo",
+        "score_week1": 18861067,
+        "score_week2": 22606797,
+        "weekly_increase": "42.28",
+        "remarks": "🚀 Enyo strapped a rocket on! +12 ranks. Xavier is eating your dust.",
+        "score_week3": 32164218
+    },
+    {
+        "rank": 51,
+        "player_name": "Xavier",
+        "score_week1": 21219572,
+        "score_week2": 25109387,
+        "weekly_increase": "27.98",
+        "remarks": "🤕 Oof. Xavier tumbled down 12 spots. Lucy is laughing.",
+        "score_week3": 32134923
+    },
+    {
+        "rank": 52,
+        "player_name": "Lucy",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 31773304,
+        "weekly_increase": "",
+        "remarks": "✨ A wild Lucy appeared! No history, just vibes. Good luck catching Xavier."
+    },
+    {
+        "rank": 53,
+        "player_name": "joewatpa",
+        "score_week1": 18713784,
+        "score_week2": 22409953,
+        "weekly_increase": "41.69",
+        "remarks": "🔥 joewatpa is on a rampage! Jumped 11 spots. Who needs brakes?",
+        "score_week3": 31752841
+    },
+    {
+        "rank": 54,
+        "player_name": "Almutairi",
+        "score_week1": 22672575,
+        "score_week2": 27215637,
+        "weekly_increase": "16.20",
+        "remarks": "📉 Almutairi is tanking. -24. Did you forget to play?",
+        "score_week3": 31625632
+    },
+    {
+        "rank": 55,
+        "player_name": "Thenamborn",
+        "score_week1": 20553122,
+        "score_week2": 24007189,
+        "weekly_increase": "30.90",
+        "remarks": "📉 Thenamborn is tanking. -8. Did you forget to play?",
+        "score_week3": 31424623
+    },
+    {
+        "rank": 56,
+        "player_name": "iKaRuSy",
+        "score_week1": 19342851,
+        "score_week2": 22996666,
+        "weekly_increase": "35.74",
+        "remarks": "🐢 Slow and steady wins the race, iKaRuSy. +2 ranks. Keep pushing.",
+        "score_week3": 31214568
+    },
+    {
+        "rank": 57,
+        "player_name": "Lord Ragnar",
+        "score_week1": 19211797,
+        "score_week2": 22887535,
+        "weekly_increase": "36.03",
+        "remarks": "🪜 One step at a time. Lord Ragnar gained 3 spots. Seyko is jealous.",
+        "score_week3": 31134256
+    },
+    {
+        "rank": 58,
+        "player_name": "Seyko",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 30797365,
+        "weekly_increase": "",
+        "remarks": "👶 Baby steps for Seyko. First week on the board. Don't trip!"
+    },
+    {
+        "rank": 59,
+        "player_name": "zaki",
+        "score_week1": 19859758,
+        "score_week2": 23145219,
+        "weekly_increase": "32.26",
+        "remarks": "🤕 Oof. zaki tumbled down 5 spots. Jobang is laughing.",
+        "score_week3": 30611458
+    },
+    {
+        "rank": 60,
+        "player_name": "Jobang",
+        "score_week1": 16570137,
+        "score_week2": 20079373,
+        "weekly_increase": "51.82",
+        "remarks": "⚡ Jobang found a cheat code. +51.82%! zaki is calling the police.",
+        "score_week3": 30484612
+    },
+    {
+        "rank": 61,
+        "player_name": "Doweedows",
+        "score_week1": 22826563,
+        "score_week2": 28206832,
+        "weekly_increase": "7.20",
+        "remarks": "💤 Doweedows fell asleep at the wheel. Dropped 33 ranks. Wake up!",
+        "score_week3": 30238906
+    },
+    {
+        "rank": 62,
+        "player_name": "No_Mercy",
+        "score_week1": 19900001,
+        "score_week2": 23260064,
+        "weekly_increase": "29.72",
+        "remarks": "📉 No_Mercy took a nap this week. Down 10 spots. Gravity hurts.",
+        "score_week3": 30173330
+    },
+    {
+        "rank": 63,
+        "player_name": "Adamovic",
+        "score_week1": 19668039,
+        "score_week2": 23043801,
+        "weekly_increase": "30.94",
+        "remarks": "📉 Adamovic is tanking. -7. Did you forget to play?",
+        "score_week3": 30172453
+    },
+    {
+        "rank": 64,
+        "player_name": "xFAC3L3SSx",
+        "score_week1": 18479539,
+        "score_week2": 22193296,
+        "weekly_increase": "35.11",
+        "remarks": "🐢 Slow and steady wins the race, xFAC3L3SSx. +1 ranks. Keep pushing.",
+        "score_week3": 29985824
+    },
+    {
+        "rank": 65,
+        "player_name": "Will",
+        "score_week1": 19909872,
+        "score_week2": 23723238,
+        "weekly_increase": "25.39",
+        "remarks": "🤕 Oof. Will tumbled down 14 spots. adrianax is laughing.",
+        "score_week3": 29746956
+    },
+    {
+        "rank": 66,
+        "player_name": "adrianax",
+        "score_week1": 18718180,
+        "score_week2": 22565234,
+        "weekly_increase": "30.99",
+        "remarks": "🧊 adrianax got cold feet. Down 3. Heat it up!",
+        "score_week3": 29558719
+    },
+    {
+        "rank": 67,
+        "player_name": "Nick John",
+        "score_week1": 18457642,
+        "score_week2": 22024028,
+        "weekly_increase": "33.67",
+        "remarks": "📉 Tiny dip for Nick John. adrianax passed you. Revenge next week?",
+        "score_week3": 29440259
+    },
+    {
+        "rank": 68,
+        "player_name": "Fadhil",
+        "score_week1": 16365886,
+        "score_week2": 19207532,
+        "weekly_increase": "51.68",
+        "remarks": "🔥 Fadhil is on a rampage! Jumped 18 spots. Who needs brakes?",
+        "score_week3": 29134598
+    },
+    {
+        "rank": 69,
+        "player_name": "Chcom martina",
+        "score_week1": 17700927,
+        "score_week2": 20652945,
+        "weekly_increase": "40.44",
+        "remarks": "🐢 Slow and steady wins the race, Chcom martina. +2 ranks. Keep pushing.",
+        "score_week3": 29004515
+    },
+    {
+        "rank": 70,
+        "player_name": "Blommetjie",
+        "score_week1": 18229564,
+        "score_week2": 21007294,
+        "score_week3": 28379637,
+        "weekly_increase": "35.09",
+        "remarks": "😬 Blommetjie slipped slightly (-1). Just a stumble or a trend?"
+    },
+    {
+        "rank": 71,
+        "player_name": "karasat",
+        "score_week1": 14263980,
+        "score_week2": 17343777,
+        "weekly_increase": "63.54",
+        "remarks": "⚡ karasat found a cheat code. +63.54%! Blommetjie is calling the police.",
+        "score_week3": 28363528
+    },
+    {
+        "rank": 72,
+        "player_name": "Minuzz",
+        "score_week1": 16569714,
+        "score_week2": 19975945,
+        "weekly_increase": "42.83",
+        "remarks": "🔥 Minuzz is on a rampage! Jumped 8 spots. Who needs brakes?",
+        "score_week3": 28532563
+    },
+    {
+        "rank": 73,
+        "player_name": "Friedrich Merz",
+        "score_week1": 18049322,
+        "score_week2": 20702753,
+        "weekly_increase": "37.03",
+        "remarks": "😬 Friedrich Merz slipped slightly (-3). Just a stumble or a trend?",
+        "score_week3": 28368686
+    },
+    {
+        "rank": 74,
+        "player_name": "빤다리아",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 28307173,
+        "weekly_increase": "",
+        "remarks": "✨ A wild 빤다리아 appeared! No history, just vibes. Good luck catching Friedrich Merz."
+    },
+    {
+        "rank": 75,
+        "player_name": "Pudge",
+        "score_week1": 17434479,
+        "score_week2": 20342648,
+        "weekly_increase": "39.02",
+        "remarks": "🔻 Pudge slid down a bit. 빤다리아 stole your spot.",
+        "score_week3": 28280944
+    },
+    {
+        "rank": 76,
+        "player_name": "TrojanTroy",
+        "score_week1": 20818852,
+        "score_week2": 24363958,
+        "weekly_increase": "15.78",
+        "remarks": "🪂 Freefall! TrojanTroy dropped 31 ranks. Parachute failed? Pudge says thanks.",
+        "score_week3": 28207796
+    },
+    {
+        "rank": 77,
+        "player_name": "Handoumeh",
+        "score_week1": 17705486,
+        "score_week2": 20603514,
+        "weekly_increase": "35.06",
+        "remarks": "🤕 Oof. Handoumeh tumbled down 5 spots. Freddy Honkong is laughing.",
+        "score_week3": 27826934
+    },
+    {
+        "rank": 78,
+        "player_name": "Freddy Honkong",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 27836961,
+        "weekly_increase": "",
+        "remarks": "👶 Baby steps for Freddy Honkong. First week on the board. Don't trip!"
+    },
+    {
+        "rank": 79,
+        "player_name": "봉구찡",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 27629832,
+        "weekly_increase": "",
+        "remarks": "👋 Welcome 봉구찡! You're new here. jon212 is already plotting your downfall."
+    },
+    {
+        "rank": 80,
+        "player_name": "jon212",
+        "score_week1": 16259574,
+        "score_week2": 19151047,
+        "weekly_increase": "43.69",
+        "remarks": "📈 STONKS! jon212 is mooning. +7 spots! 봉구찡, check your rearview!",
+        "score_week3": 27518288
+    },
+    {
+        "rank": 81,
+        "player_name": "Sheldor1907",
+        "score_week1": 18252166,
+        "score_week2": 21242169,
+        "weekly_increase": "29.46",
+        "remarks": "📉 Sheldor1907 is tanking. -13. Did you forget to play?",
+        "score_week3": 27500396
+    },
+    {
+        "rank": 82,
+        "player_name": "LandScape",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 27490151,
+        "weekly_increase": "",
+        "remarks": "🆕 Fresh meat! LandScape enters the arena. Try not to get eaten by Sheldor1907."
+    },
+    {
+        "rank": 83,
+        "player_name": "katrankins96",
+        "score_week1": 16510936,
+        "score_week2": 19642351,
+        "weekly_increase": "39.56",
+        "remarks": "🤔 katrankins96 lost 1 spots. Aslanee is breathing down your neck.",
+        "score_week3": 27413539
+    },
+    {
+        "rank": 84,
+        "player_name": "Aslanee",
+        "score_week1": 16862914,
+        "score_week2": 20234830,
+        "weekly_increase": "35.37",
+        "remarks": "🪂 Freefall! Aslanee dropped 8 ranks. Parachute failed? katrankins96 says thanks.",
+        "score_week3": 27392877
+    },
+    {
+        "rank": 85,
+        "player_name": "일하기싫다",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 27368066,
+        "weekly_increase": "",
+        "remarks": "🆕 Fresh meat! 일하기싫다 enters the arena. Try not to get eaten by Aslanee."
+    },
+    {
+        "rank": 86,
+        "player_name": "KingJXI",
+        "score_week1": 16522642,
+        "score_week2": 19936790,
+        "weekly_increase": "34.88",
+        "remarks": "📉 KingJXI took a nap this week. Down 5 spots. Gravity hurts.",
+        "score_week3": 26890867
+    },
+    {
+        "rank": 87,
+        "player_name": "Guapo Gato",
+        "score_week1": 16390976,
+        "score_week2": 19365566,
+        "weekly_increase": "38.53",
+        "remarks": "😬 Guapo Gato slipped slightly (-3). Just a stumble or a trend?",
+        "score_week3": 26826797
+    },
+    {
+        "rank": 88,
+        "player_name": "lordvoldem",
+        "score_week1": 16370216,
+        "score_week2": 19220026,
+        "weekly_increase": "36.88",
+        "remarks": "🤔 lordvoldem lost 3 spots. CutsAreGood is breathing down your neck.",
+        "score_week3": 26308810
+    },
+    {
+        "rank": 89,
+        "player_name": "CutsAreGood",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 25968566,
+        "weekly_increase": "",
+        "remarks": "🆕 CutsAreGood joined the chat. lordvoldem is wondering who invited you."
+    },
+    {
+        "rank": 90,
+        "player_name": "Gnndyy",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 25121276,
+        "weekly_increase": "",
+        "remarks": "✨ A wild Gnndyy appeared! No history, just vibes. Good luck catching CutsAreGood."
+    },
+    {
+        "rank": 91,
+        "player_name": "Mad King",
+        "score_week1": 19829158,
+        "score_week2": 23096535,
+        "weekly_increase": "6.60",
+        "remarks": "🤕 Oof. Mad King tumbled down 36 spots. Dawn is laughing.",
+        "score_week3": 24620060
+    },
+    {
+        "rank": 92,
+        "player_name": "Dawn",
+        "score_week1": 15295512,
+        "score_week2": 17390124,
+        "weekly_increase": "41.31",
+        "remarks": "💪 Dawn flexed a bit. Up 4. Mad King is within reach.",
+        "score_week3": 24573322
+    },
+    {
+        "rank": 93,
+        "player_name": "Ebbott",
+        "score_week1": 15398938,
+        "score_week2": 18003020,
+        "weekly_increase": "33.17",
+        "remarks": "💪 Ebbott flexed a bit. Up 2. Dawn is within reach.",
+        "score_week3": 23974216
+    },
+    {
+        "rank": 94,
+        "player_name": "小蘑菇",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 23564225,
+        "weekly_increase": "",
+        "remarks": "👶 Baby steps for 小蘑菇. First week on the board. Don't trip!"
+    },
+    {
+        "rank": 95,
+        "player_name": "R3DG",
+        "score_week1": 15913104,
+        "score_week2": 18348364,
+        "weekly_increase": "26.35",
+        "remarks": "📉 Tiny dip for R3DG. 小蘑菇 passed you. Revenge next week?",
+        "score_week3": 23183561
+    },
+    {
+        "rank": 96,
+        "player_name": "진주곰팅79",
+        "score_week1": null,
+        "score_week2": null,
+        "score_week3": 21842595,
+        "weekly_increase": "",
+        "remarks": "🆕 Fresh meat! 진주곰팅79 enters the arena. Try not to get eaten by R3DG."
+    },
+    {
+        "rank": 97,
+        "player_name": "Angelina",
+        "score_week1": 15693290,
+        "score_week2": 18188408,
+        "weekly_increase": "19.39",
+        "remarks": "🔻 Angelina slid down a bit. 진주곰팅79 stole your spot.",
+        "score_week3": 21715948
+    },
+    {
+        "rank": 98,
+        "player_name": "Alodia",
+        "score_week1": 15941683,
+        "score_week2": 18856591,
+        "weekly_increase": "14.67",
+        "remarks": "📉 Alodia took a nap this week. Down 9 spots. Gravity hurts.",
+        "score_week3": 21623726
+    },
+    {
+        "rank": 99,
+        "player_name": "P1sang",
+        "score_week1": 15927379,
+        "score_week2": 18365800,
+        "weekly_increase": "15.53",
+        "remarks": "📉 P1sang is tanking. -8. Did you forget to play?",
+        "score_week3": 21218215
+    },
+    {
+        "rank": 100,
+        "player_name": "VFRESH",
+        "score_week1": null,
+        "score_week2": 15352260,
+        "weekly_increase": "16.44",
+        "remarks": "⛺ VFRESH set up camp at #100. Comfortable? the abyss wants your tent.",
+        "score_week3": 17876936
+    },
+    {
+        "rank": null,
+        "player_name": "SlimB",
+        "score_week1": 43439462,
+        "score_week2": 58704915,
+        "weekly_increase": "35.14",
+        "remarks": "🔥 Great push, SlimB! Still chasing Baatz’s rocket trail though — bring extra boosters next week.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "Fatal",
+        "score_week1": 24606898,
+        "score_week2": 31004715,
+        "weekly_increase": "26.00",
+        "remarks": "💀 Fatal damage delivered — Lady Wilde felt that. Stay deadly.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "MiloZ",
+        "score_week1": 20866800,
+        "score_week2": 24388436,
+        "weekly_increase": "16.88",
+        "remarks": "🧩 Solid moves, but TrojanTroy is plotting a bigger puzzle. Finish it next week.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "Mustafa T",
+        "score_week1": 20765476,
+        "score_week2": 24131867,
+        "weekly_increase": "16.21",
+        "remarks": "🧭 Mustafa’s steady as a compass — not flashy, but won’t get lost. Keep navigating.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "GoMs42051",
+        "score_week1": 19885092,
+        "score_week2": 23196796,
+        "weekly_increase": "16.65",
+        "remarks": "🧱 Gabi stacking blocks — keep building, the tower’s close.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "Pavel 911",
+        "score_week1": 19552667,
+        "score_week2": 23039156,
+        "weekly_increase": "17.83",
+        "remarks": "🚨 Emergency boost! Pavel’s siren is blaring — good response.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "RICKY",
+        "score_week1": 19232730,
+        "score_week2": 22901790,
+        "weekly_increase": "19.08",
+        "remarks": "🎯 RICKY hit the bullseye — Lord Ragnar’s watching your target.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "BaGe",
+        "score_week1": 17654995,
+        "score_week2": 20514181,
+        "weekly_increase": "16.19",
+        "remarks": "🔩 Consistent bolts — o(>_<)o Pudgyo(>_<)o is wobbling but climbing.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "Ramzi 0147",
+        "score_week1": 16753546,
+        "score_week2": 20187922,
+        "weekly_increase": "20.50",
+        "remarks": "🏁 Strong sprint — 小甜甜 is trailing but persistent.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "小甜甜",
+        "score_week1": 16753490,
+        "score_week2": 20110700,
+        "weekly_increase": "20.04",
+        "remarks": "🍭 Sweet and steady — Jubang’s next to taste this candy.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "전우진79",
+        "score_week1": 16488364,
+        "score_week2": 19404685,
+        "weekly_increase": "17.69",
+        "remarks": "⚔️ Strong blade — Guapo Gato’s claws are nearby.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "LovelyFreddy",
+        "score_week1": 16154791,
+        "score_week2": 18962629,
+        "weekly_increase": "17.38",
+        "remarks": "🎈 Cheerful ascent — Alodia’s following your confetti trail.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "몽구리",
+        "score_week1": 15939570,
+        "score_week2": 18530862,
+        "weekly_increase": "16.26",
+        "remarks": "🐾 Gentle steps — Phong’s next to trot by.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "hi123",
+        "score_week1": 15743697,
+        "score_week2": 18227706,
+        "weekly_increase": "15.78",
+        "remarks": "⌨️ Keyboard warrior — Angelina’s typing faster.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "jack_",
+        "score_week1": 13881579,
+        "score_week2": 17244308,
+        "weekly_increase": "24.22",
+        "remarks": "⚡ jack_ electrified the ranks — Lightinthe98, you’re glowing too.",
+        "status": "gone"
+    },
+    {
+        "rank": null,
+        "player_name": "LightontheHill",
+        "score_week1": 13507628,
+        "score_week2": 16104321,
+        "weekly_increase": "19.22",
+        "remarks": "🔦 Shining steady — VIPFRESH is brewing a surprise behind the scenes.",
+        "status": "gone"
+    }
 ]
